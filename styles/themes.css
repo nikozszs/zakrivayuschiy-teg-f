@@ -6,6 +6,7 @@
   --accent-color: #00CC14;
   --weight-text: 465;
   --weight-title: 785;
+  --bg-color: #000000;
 }
 
 :root.theme-light {
@@ -16,6 +17,7 @@
   --accent-color: #000000;
   --weight-text: 400;
   --weight-title: 700;
+  --bg-color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +29,7 @@
     --accent-color: #00CC14;
     --weight-text: 465;
     --weight-title: 785;
+    --bg-color: #000000;
   }
 }
 
@@ -39,6 +42,7 @@
     --accent-color: #000000;
     --weight-text: 400;
     --weight-title: 700;
+    --bg-color: #FFFFFF;
   }
 
   .theme_auto {
@@ -47,6 +51,7 @@
       repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
     --accent-color: #000000;
+    --bg-color: #FFFFFF;
     --weight-text: 400;
     --weight-title: 700;
   }
