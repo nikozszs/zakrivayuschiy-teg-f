@@ -17,4 +17,6 @@
   repeating-linear-gradient(180deg, #000000 0 2px, transparent 2px 4px),
   linear-gradient(180deg, #007F0C 0%, #004306 100%);
   --accent-color: #00CC14;
+  --stroke-color: #000000;
+  --stroke-color: #00CC14;
 }

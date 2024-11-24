@@ -32,7 +32,7 @@
 .header {
   background-color: var(--bg-color);
   margin-block-start: 101px;
-  margin-block-end: 102px;
+  margin-block-end: 100px;
   height: 368px;
   border: 2px solid #000;
   display: flex;
@@ -74,9 +74,6 @@
   line-height: 14px;
 }
 
-.theme-menu__item {
-}
-
 .theme-menu__button {
   background-color: transparent;
   text-transform: uppercase;
@@ -85,12 +82,86 @@
   border: none;
   font-weight: var(--weight-text);
   font-family: var(--accent-font);
+  position: relative;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: 0.5s ease-in-out infinite normal;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.theme-menu__but:focus-visible {
+  opacity: 0.6;
+  text-decoration: underline;
+  transition: inherit 0.5s;
+}
+
+.card {
+  background-color: var(--bg-color);
+  margin-block-end: 52px;
+  height: 959px;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.card__title {
+  font-family: var(--main-font);
+  size: 18px;
+  font-weight: var(--weight-title);
+  line-height: 21.78px;
+  padding: 3px 0 4px;
+}
+
+.card__subtitle {
+  position: absolute;
+  color: var(--accent-color);
+  font-weight: var(--weight-text);
+  font-size: 14px;
+  text-shadow: 1px 2px var(--stroke-color);
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+  top: 57px;
+  right: 25px;
+}
+
+.picture {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__text {
+  font-family: var(--main-font);
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 21px;
+  padding: 27px 25px 2px 25px;
+}
+
+@supports (-webkit-text-stroke: 6px var(--stroke-color)) {
+  .card__subtitle {
+    -webkit-text-stroke: 6px var(--stroke-color);
+  }
+}
+
+.card__like-button {
+  background-image: url(../images/svg/like-icon.svg);
+  background-repeat: no-repeat;
 }
 
 
-.theme-menu__button:disabled {
-  content: "▶";
-  width: 14px;
-  height: 14px;
+
+@media (width <= 375px) {
 
 }
