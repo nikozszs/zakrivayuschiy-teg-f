@@ -4,14 +4,18 @@
     repeating-linear-gradient(180deg, #000000 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #007F0C 0%, #004306 100%);
   --accent-color: #00CC14;
+  --weight-text: 465;
+  --weight-title: 785;
 }
 
 :root.theme-light {
   --bg-image: 
-      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
-      linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
   --accent-color: #000000;
+  --weight-text: 400;
+  --weight-title: 700;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,14 +25,8 @@
       repeating-linear-gradient(180deg, #000000 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #007F0C 0%, #004306 100%);
     --accent-color: #00CC14;
-  }
-
-  .theme_auto {
-    --bg-image: 
-      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
-      linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
-    --accent-color: #000000;
+    --weight-text: 465;
+    --weight-title: 785;
   }
 }
 
@@ -39,6 +37,8 @@
       repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
     --accent-color: #000000;
+    --weight-text: 400;
+    --weight-title: 700;
   }
 
   .theme_auto {
@@ -47,5 +47,7 @@
       repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
     --accent-color: #000000;
+    --weight-text: 400;
+    --weight-title: 700;
   }
 }
