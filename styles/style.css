@@ -135,10 +135,13 @@
 
 .card__title {
   font-family: var(--main-font);
-  size: 18px;
+  font-size: 18px;
   font-variation-settings: 'wght' var(--weight-title);
   line-height: 21.78px;
-  padding: 3px 0 4px;
+  height: 29px;
+  text-align: left;
+  padding-left: 9px;
+  padding-top: 2px;
 }
 
 .card__label {
@@ -368,6 +371,14 @@ form {
 
   .theme-menu__list {
     gap: 12px;
+  }
+
+  .card__title {
+    min-width: 31px;
+    max-height: 52px;
+    height: 100%;
+    padding-right: 4px;
+    padding-bottom: 9px;
   }
 
   .picture {
