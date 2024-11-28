@@ -4,10 +4,12 @@
     repeating-linear-gradient(180deg, #000000 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #007F0C 0%, #004306 100%);
   --accent-color: #00CC14;
-  --weight-text: 465;
-  --weight-title: 785;
+  --weight-text: 'Inter-Variable' 465;
+  --weight-title: 'Inter-Variable' 785;
   --bg-color: #000000;
   --stroke-color: #00CC14;
+  --color-contour: #00CC14;
+  --color-sparks: none;
 }
 
 :root.theme-light {
@@ -16,10 +18,12 @@
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
   --accent-color: #000000;
-  --weight-text: 400;
-  --weight-title: 700;
+  --weight-text: 'Inter-Variable' 400;
+  --weight-title: 'Inter-Variable' 700;
   --bg-color: #FFFFFF;
   --stroke-color: #000000;
+  --color-contour: #000000;
+  --color-sparks: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,10 +33,12 @@
       repeating-linear-gradient(180deg, #000000 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #007F0C 0%, #004306 100%);
     --accent-color: #00CC14;
-    --weight-text: 465;
-    --weight-title: 785;
+    --weight-text: 'Inter-Variable' 465;
+    --weight-title: 'Inter-Variable' 785;
     --bg-color: #000000;
     --stroke-color: #00CC14;
+    --color-contour: #00CC14;
+    --color-sparks: none;
   }
 }
 
@@ -43,10 +49,12 @@
       repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
     --accent-color: #000000;
-    --weight-text: 400;
-    --weight-title: 700;
+    --weight-text: 'Inter-Variable' 400;
+    --weight-title: 'Inter-Variable' 700;
     --bg-color: #FFFFFF;
     --stroke-color: #000000;
+    --color-contour: #000000;
+    --color-sparks: #FF0000;
   }
 
   .theme_auto {
@@ -56,8 +64,10 @@
       linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
     --accent-color: #000000;
     --bg-color: #FFFFFF;
-    --weight-text: 400;
-    --weight-title: 700;
+    --weight-text: 'Inter-Variable' 400;
+    --weight-title: 'Inter-Variable' 700;
     --stroke-color: #000000;
+    --color-contour: #000000;
+    --color-sparks: #FF0000;
   }
 }

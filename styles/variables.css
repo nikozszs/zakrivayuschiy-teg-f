@@ -2,10 +2,10 @@
 :root {
   --accent-font: 'PressStart2P-Regular';
   --main-font: 'Inter-Variable';
-  --weight-text: 400;
-  --weight-title: 700;
-  --weight-text: 465;
-  --weight-title: 785;
+  --weight-text: 'Inter-Variable' 400;
+  --weight-title: 'Inter-Variable' 700;
+  --weight-text: 'Inter-Variable' 465;
+  --weight-title: 'Inter-Variable' 785;
   --bg-color: #FFFFFF;
   --bg-image: 
   repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
@@ -19,4 +19,8 @@
   --accent-color: #00CC14;
   --stroke-color: #000000;
   --stroke-color: #00CC14;
+  --color-contour: #000000;
+  --color-contour: #00CC14;
+  --color-sparks: #FF0000;
+  --color-sparks: none;
 }
