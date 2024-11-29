@@ -23,4 +23,6 @@
   --color-contour: #00CC14;
   --color-sparks: #FF0000;
   --color-sparks: none;
+  --text-like: #FFFFFF;
+  --text-like: #00CC14;
 }

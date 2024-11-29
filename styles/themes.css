@@ -10,6 +10,7 @@
   --stroke-color: #00CC14;
   --color-contour: #00CC14;
   --color-sparks: none;
+  --text-like: #00CC14;
 }
 
 :root.theme-light {
@@ -24,6 +25,7 @@
   --stroke-color: #000000;
   --color-contour: #000000;
   --color-sparks: #FF0000;
+  --text-like: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +41,7 @@
     --stroke-color: #00CC14;
     --color-contour: #00CC14;
     --color-sparks: none;
+    --text-like: #00CC14;
   }
 }
 
@@ -55,6 +58,7 @@
     --stroke-color: #000000;
     --color-contour: #000000;
     --color-sparks: #FF0000;
+    --text-like: #FFFFFF;
   }
 
   .theme_auto {
@@ -69,5 +73,6 @@
     --stroke-color: #000000;
     --color-contour: #000000;
     --color-sparks: #FF0000;
+    --text-like: #FFFFFF;
   }
 }
