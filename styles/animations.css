@@ -12,3 +12,13 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes button {
+  from {left: 0;}
+  to {left: 4px;}
+}
+
+@keyframes focus {
+  from {width: 0;}
+  to {width: 100%;}
+}
