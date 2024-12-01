@@ -250,6 +250,10 @@
   mix-blend-mode: difference;
 }
 
+.like-icon .is-liked .heart {
+  animation: heart-scale 0.1s 0.3s ease-in 1;
+}
+
 .like-icon .contour {
   fill: var(--accent-color);
   transition: fill 0.1s linear;
@@ -263,6 +267,10 @@
 .like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
+}
+
+.like-icon .is-liked .sparks {
+  animation: sparks-opacity 0.3s 0.3s ease-in;
 }
 
 .button_dialog {
@@ -307,7 +315,9 @@ dialog::backdrop {
 }
 
 .popup_icon {
-  max-width: 22px;
+  max-width: 21px;
+  mix-blend-mode: difference;
+  color: var(--accent-color);
   height: auto;
 }
 
@@ -360,10 +370,8 @@ dialog::backdrop {
   }
 
   .header {
-  }
-
-  .header__title {
-    margin-block-start: 92px;
+    padding: 120px 14px 22px 14px;
+    margin-block-end: 104px;
   }
 
   .header__subtitle {
@@ -379,7 +387,6 @@ dialog::backdrop {
     max-height: 52px;
     height: 100%;
     padding-right: 4px;
-    padding-bottom: 9px;
   }
 
   .picture {
@@ -389,13 +396,27 @@ dialog::backdrop {
   .footer__button-save {
     width: 308px;
     height: 84px;
+    padding: 15px 19px 10px 19px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 19px;
   }
 
   dialog {
     width: 342px;
   }
 
+  .popup_icon {
+    margin-left: 118px;
+    max-width: 28px;
+    height: auto;
+  }
+
   .close {
     width: 275px;
+  }
+
+  .dialog__layout {
+    gap: 14px;
   }
 }
