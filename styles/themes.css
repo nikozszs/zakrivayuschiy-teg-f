@@ -60,19 +60,4 @@
     --color-sparks: #FF0000;
     --text-like: #FFFFFF;
   }
-
-  .theme_auto {
-    --bg-image: 
-      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
-      linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
-    --accent-color: #000000;
-    --bg-color: #FFFFFF;
-    --weight-text: 'Inter-Variable' 400;
-    --weight-title: 'Inter-Variable' 700;
-    --stroke-color: #FFFFFF;
-    --color-contour: #000000;
-    --color-sparks: #FF0000;
-    --text-like: #FFFFFF;
-  }
 }
