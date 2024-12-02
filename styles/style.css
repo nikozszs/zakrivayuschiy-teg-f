@@ -24,8 +24,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin-left: 25.7%;
-  margin-right: 25.7%;
+  margin-left: clamp(0rem, -8.143rem + 34.742vw, 23.125rem);
+  margin-right: clamp(0rem, -8.143rem + 34.742vw, 23.125rem);
 }
 
 .header {
@@ -36,7 +36,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 136px 120px 21px 120px;
+  padding-top: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
+  padding-right: clamp(0.875rem, -1.458rem + 9.953vw, 7.5rem);
+  padding-bottom: 25px;
+  padding-left: clamp(0.875rem, -1.458rem + 9.953vw, 7.5rem);
 }
 
 .header__title {
@@ -334,13 +337,7 @@ dialog::backdrop {
 
 @media (min-width: 630px) and (max-width: 1000px) {
   .page {
-    margin-left: 25%;
-    margin-right: 25%;
     background-position: center;
-  }
-
-  .header {
-    padding: 120px 14px 25px 14px;
   }
 
   .header__title {
@@ -349,28 +346,13 @@ dialog::backdrop {
 }
 
 @media (min-width: 376px) and (max-width: 630px) {
-  .page {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .header {
-    padding: 120px 14px 25px 14px;
-  }
-
   .header__title {
     font-size: clamp(2.813rem, 2.232rem + 1.429vw, 3.125rem);
   }
 }
 
 @media (width <= 375px) {
-  .page {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
   .header {
-    padding: 120px 14px 22px 14px;
     margin-block-end: 104px;
   }
 
