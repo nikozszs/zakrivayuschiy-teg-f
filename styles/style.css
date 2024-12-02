@@ -168,7 +168,7 @@
 .picture {
   display: block;
   max-width: 100%;
-  width: 693px;
+  width: 696px;
   max-height: 100%;
   height: 700px;
   object-fit: cover;
@@ -232,6 +232,7 @@
 .like-icon {
   justify-content: center;
   align-items: center;
+  transition: fill 0.3s;
 }
 
 .card__icon-button:focus-visible {
@@ -254,13 +255,18 @@
   mix-blend-mode: difference;
 }
 
-.like-icon .is-liked .heart {
-  animation: heart-scale 0.1s 0.3s ease-in 1;
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.1s 0.3s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-opacity 0.3s 0.3s ease-in;
+  fill: var(--color-sparks);
 }
 
 .like-icon .contour {
-  fill: var(--accent-color);
-  transition: fill 0.1s linear;
+  fill: var(--accent-color); 
+  transition: fill 0.1s linear; 
 }
 
 .like-icon .core {
@@ -273,9 +279,24 @@
   transition: fill 0.3s linear;
 }
 
-.like-icon .is-liked .sparks {
-  animation: sparks-opacity 0.3s 0.3s ease-in;
+.like-icon .sparks {
+  opacity: 0;
 }
+
+.like-icon .core:hover {
+  fill: var(--color-sparks);
+  transition: fill 0.3s 0.3s linear;
+}
+
+.like-icon .core:focus {
+  fill: var(--color-sparks);
+}
+
+.like-icon .main-body:hover {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
 
 .button_dialog {
   display: flex;
