@@ -11,6 +11,7 @@
   --color-contour: #00CC14;
   --color-sparks: none;
   --text-like: #00CC14;
+  --fill: #FF0000;
 }
 
 :root.theme-light {
@@ -26,6 +27,7 @@
   --color-contour: #000000;
   --color-sparks: #FF0000;
   --text-like: #FFFFFF;
+  --fill: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +44,7 @@
     --color-contour: #00CC14;
     --color-sparks: none;
     --text-like: #00CC14;
+    --fill: #FF0000;
   }
 }
 
@@ -59,5 +62,6 @@
     --color-contour: #000000;
     --color-sparks: #FF0000;
     --text-like: #FFFFFF;
+    --fill: #FF0000;
   }
 }
