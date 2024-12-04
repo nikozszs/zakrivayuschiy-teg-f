@@ -2,8 +2,8 @@
 :root {
   --accent-font: 'PressStart2P';
   --main-font: 'Inter-Variable';
-  --weight-text: 'Inter-Variable' 400;
-  --weight-title: 'Inter-Variable' 700;
+  --weight-text: 400;
+  --weight-title: 700;
   --bg-color: #FFFFFF;
   --bg-image: 
   repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
