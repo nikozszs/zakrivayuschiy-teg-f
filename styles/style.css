@@ -343,8 +343,8 @@
   background-color: var(--bg-color);
   text-align: center;
   border: 2px solid var(--accent-color);
-  min-width: 339px;
-  min-height: 59px;
+  width: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
+  min-height: 56px;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -444,22 +444,15 @@ dialog::backdrop {
   }
 
   .footer__button-save {
-    width: 308px;
     height: 84px;
-    padding: 15px 19px 10px 19px;
+    padding: 16px 0px 10px 0px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 19px;
+    gap: 15px;
   }
 
   dialog {
     width: 342px;
-  }
-
-  .popup_icon {
-    margin-left: 118px;
-    max-width: 28px;
-    height: auto;
   }
 
   .close {
@@ -474,7 +467,7 @@ dialog::backdrop {
     max-width: 28px;
     color: var(--accent-color);
     height: auto;
-    margin-left: 115px;
+    margin-left: 135px;
   }
 }
 
