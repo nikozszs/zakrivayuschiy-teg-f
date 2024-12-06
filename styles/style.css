@@ -122,6 +122,7 @@
 
 .theme-menu__button:focus-visible {
   outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -159,6 +160,7 @@
   font-variation-settings: 'wght' var(--weight-text);
   font-size: 14px;
   line-height: 14px;
+  text-shadow: 2px 1px 1px var(--stroke-color); 
   -webkit-text-stroke: 1px var(--stroke-color);
   font-family: var(--accent-font), 'fantasy';
   mix-blend-mode: hard-light;
@@ -171,6 +173,7 @@
 @supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
   .card__label {
     -webkit-text-stroke: 1px var(--stroke-color);
+    text-shadow: none; 
   }
 }
 
