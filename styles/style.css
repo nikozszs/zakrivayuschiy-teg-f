@@ -373,7 +373,7 @@ dialog::backdrop {
 .dialog__layout {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 30px;
 }
 
@@ -381,10 +381,11 @@ dialog::backdrop {
   max-width: 21px;
   color: var(--accent-color);
   height: auto;
+  fill: currentColor;
 }
 
 .popup__icon-dialog {
-  max-width: 39px;
+  min-width: 39px;
   color: var(--accent-color);
   height: auto;
 }
@@ -460,7 +461,7 @@ dialog::backdrop {
   }
 
   .dialog__layout {
-    gap: 14px;
+    gap: 20px;
   }
 
   .popup__icon {
@@ -468,6 +469,12 @@ dialog::backdrop {
     color: var(--accent-color);
     height: auto;
     margin-left: 135px;
+  }
+
+  .popup__icon-dialog {
+    min-width: 39px;
+    color: var(--accent-color);
+    height: auto;
   }
 }
 
