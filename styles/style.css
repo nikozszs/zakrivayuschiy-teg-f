@@ -176,10 +176,8 @@
 
 .picture {
   display: block;
-  max-width: 100%;
-  width: 696px;
-  max-height: 100%;
-  height: 700px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-top: 1px solid var(--accent-color);
@@ -379,15 +377,17 @@ dialog::backdrop {
 
 .popup__icon {
   max-width: 21px;
-  color: var(--accent-color);
   height: auto;
+  z-index: 3;
   fill: currentColor;
+  color: var(--floppy);
+  mix-blend-mode: difference;
 }
 
 .popup__icon-dialog {
   min-width: 39px;
-  color: var(--accent-color);
   height: auto;
+  color: var(--accent-color);
 }
 
 .close {
@@ -466,21 +466,12 @@ dialog::backdrop {
 
   .popup__icon {
     max-width: 28px;
-    color: var(--accent-color);
     height: auto;
     margin-left: 135px;
   }
 
   .popup__icon-dialog {
     min-width: 39px;
-    color: var(--accent-color);
     height: auto;
-  }
-}
-
-@media (width > 1441px) {
-  .picture{
-    width: 1816px;
-    height: 700px;
   }
 }

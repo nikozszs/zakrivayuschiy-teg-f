@@ -12,6 +12,7 @@
   --color-sparks: none;
   --text-like: #00CC14;
   --fill: #FF0000;
+  --floppy: #00CC14;
 }
 
 :root.theme-light {
@@ -28,6 +29,7 @@
   --color-sparks: #FF0000;
   --text-like: #FFFFFF;
   --fill: #FF0000;
+  --floppy: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +47,7 @@
     --color-sparks: none;
     --text-like: #00CC14;
     --fill: #FF0000;
+    --floppy: #00CC14;
   }
 }
 
@@ -63,5 +66,6 @@
     --color-sparks: #FF0000;
     --text-like: #FFFFFF;
     --fill: #FF0000;
+    --floppy: #FFFFFF;
   }
 }
