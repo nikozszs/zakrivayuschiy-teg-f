@@ -161,7 +161,6 @@
   font-size: 14px;
   line-height: 14px;
   text-shadow: 2px 1px 1px var(--stroke-color); 
-  -webkit-text-stroke: 1px var(--stroke-color);
   font-family: var(--accent-font), 'fantasy';
   mix-blend-mode: hard-light;
   top: 25px;
@@ -390,7 +389,7 @@ dialog::backdrop {
   fill: currentColor;
   color: var(--floppy);
   mix-blend-mode: difference;
-  position: relative
+  position: relative;
 }
 
 .popup__icon-dialog {
